@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Para el amor de mi vida:\n\nDesde el primer momento supe que eras tú. Tu sonrisa, tu voz, tu forma de ser… todo en ti me hace sentir en casa.\n\nGracias por acompañarme en cada paso, por entenderme incluso en silencio, y por llenar mis días de amor.\n\nTe amo más de lo que las palabras pueden expresar.`;  } else {
+    text = `Para mi princesa:\n\nDesde el primer momento supe que eras tú. Tu sonrisa, tus ojos, tu forma de ser… todo en ti me encata.\n\nQuiero que sepas lo feliz que soy de tenerte en mi vida. Desde que llegaste, todo cambió para mejor.\n\nNo se como explicarlo, pero contigo mi corazon explota de amor. Eres mi alegría, mi sol. Te amo un montón.`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -101,7 +101,7 @@ function showSignature() {
     dedication.appendChild(signature);
   }
   let firma = getURLParam('firma');
-  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor, Zero";
+  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor, Cristopher";
   signature.classList.add('visible');
 }
 
@@ -146,8 +146,8 @@ function showCountdown() {
   const container = document.getElementById('countdown');
   let startParam = getURLParam('start');
   let eventParam = getURLParam('event');
-  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2024-08-03T00:00:00'); 
-  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2025-08-03T00:00:00');
+  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2024-12-29T00:00:00'); 
+  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2025-08-14T00:00:00');
 
   function update() {
     const now = new Date();
